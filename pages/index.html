@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, pink, blue);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            font-size: 2em;
+        }
+
+        .box {
+            margin: auto;
+            padding: 23px;
+            height: 230px;
+            width: 230px;
+            border-radius: 9px;
+            box-shadow: 5px 15px 5px rgb(57, 53, 53);
+            background-color: white;
+        }
+
+        .box b {
+            font-size: 0.8em;
+        }
+
+        .button {
+            margin: 65px;
+            padding: 9px 19px;
+            border-radius: 19px;
+            border: 1px solid rgb(36, 113, 221);
+            background-color: rgb(36, 113, 221);
+            color: white;
+            box-shadow: 1px 3px 1px rgb(86, 80, 80);
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <h2>Registration Form</h2>
+            <form method="post" action="/register">
+
+                <div class="box">
+                    <label for="username"><b>Username</b></label>
+                    <br>
+                    <input type="text" placeholder="Enter username." name="username" id="username" required />
+                    <br>
+                    <label for="email"><b>Email</b></label>
+                    <br>
+                    <input type="text" placeholder="Enter EmailId." name="email" id="email" required />
+                    <br>
+                    <label for="password"><b>Password</b></label>
+                    <br>
+                    <input type="text" placeholder="Enter password" name="password" id="password" required />
+                </div>
+
+                <button type="submit" class="button">Register</button>
+
+
+        </div>
+
+    </form>
+
+
+</body>
+
+</html>
